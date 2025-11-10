@@ -52,10 +52,10 @@ CMD ["/bin/bash"]
 
 
 # Register all CSharp profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, CSharpProfile)
-        and obj.__name__ != "CSharpProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, CSharpProfile)
+#         and obj.__name__ != "CSharpProfile"
+#     ):
+#         registry.register_profile(obj)

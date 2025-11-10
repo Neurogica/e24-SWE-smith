@@ -79,10 +79,10 @@ RUN mkdir build && cd build \
 
 
 # Register all C++ profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, CppProfile)
-        and obj.__name__ != "CppProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, CppProfile)
+#         and obj.__name__ != "CppProfile"
+#     ):
+#         registry.register_profile(obj)

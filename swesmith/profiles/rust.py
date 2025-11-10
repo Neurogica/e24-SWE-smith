@@ -214,11 +214,11 @@ class RustClippyf4f579f4(RustProfile):
     commit: str = "f4f579f4ac455b76ddadc85553ba19b115dd144e"
 
 
-# Register all Rust profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, RustProfile)
-        and obj.__name__ != "RustProfile"
-    ):
-        registry.register_profile(obj)
+# # Register all Rust profiles with the global registry
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, RustProfile)
+#         and obj.__name__ != "RustProfile"
+#     ):
+#         registry.register_profile(obj)

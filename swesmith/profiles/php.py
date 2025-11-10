@@ -57,10 +57,10 @@ RUN composer install
 
 
 # Register all Rust profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, PhpProfile)
-        and obj.__name__ != "PhpProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, PhpProfile)
+#         and obj.__name__ != "PhpProfile"
+#     ):
+#         registry.register_profile(obj)

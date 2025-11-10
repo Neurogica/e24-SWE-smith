@@ -56,10 +56,10 @@ RUN mvn clean install -B -pl gson -DskipTests -am
 
 
 # Register all Java profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, JavaProfile)
-        and obj.__name__ != "JavaProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, JavaProfile)
+#         and obj.__name__ != "JavaProfile"
+#     ):
+#         registry.register_profile(obj)

@@ -109,10 +109,10 @@ RUN make
 
 
 # Register all C profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, CProfile)
-        and obj.__name__ != "CProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, CProfile)
+#         and obj.__name__ != "CProfile"
+#     ):
+#         registry.register_profile(obj)

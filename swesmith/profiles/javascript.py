@@ -516,10 +516,10 @@ class Echarts6be0e145(JavaScriptProfile):
 
 
 # Register all JavaScript profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, JavaScriptProfile)
-        and obj.__name__ != "JavaScriptProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, JavaScriptProfile)
+#         and obj.__name__ != "JavaScriptProfile"
+#     ):
+#         registry.register_profile(obj)

@@ -769,10 +769,10 @@ class Httptreemux(GoProfile):
 
 
 # Register all Go profiles with the global registry
-for name, obj in list(globals().items()):
-    if (
-        isinstance(obj, type)
-        and issubclass(obj, GoProfile)
-        and obj.__name__ != "GoProfile"
-    ):
-        registry.register_profile(obj)
+# for name, obj in list(globals().items()):
+#     if (
+#         isinstance(obj, type)
+#         and issubclass(obj, GoProfile)
+#         and obj.__name__ != "GoProfile"
+#     ):
+#         registry.register_profile(obj)
